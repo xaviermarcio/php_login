@@ -4,9 +4,9 @@ include('conexao.php');
 if(isset($_POST['email']) || isset($_POST['senha'])) {
 
     if(strlen($_POST['email']) == 0) {
-        echo "Preencha seu e-mail";
+       echo "<script>alert('Digite seu email!');</script>";
     } else if(strlen($_POST['senha']) == 0) {
-        echo "Preencha sua senha";
+       echo "<script>alert('Digite sua senha!');</script>"; 
     } else {
 
         $email = $mysqli->real_escape_string($_POST['email']);
@@ -31,7 +31,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             header("Location: painel.php");
 
         } else {
-            echo "Falha ao logar! E-mail ou senha incorretos";
+            echo "<script>alert('Falha ao logar! E-mail ou senha incorretos')</script>";
         }
 
     }
