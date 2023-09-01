@@ -17,7 +17,7 @@ body{
 }
 
 main.container{
-    background: rgb(48, 22, 199);
+    background: rgb(60, 38, 188);
     min-width: 320px;
     min-height: 40vh;
     padding: 2rem;
@@ -41,4 +41,46 @@ main h2::before{
     border-radius: 10px;
     background: linear-gradient(45deg , rgb(234, 57, 57), rgb(121, 242, 244));
 }    
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field{
+    position: relative;
+}
+
+form .input-field:first-child{
+    margin-bottom:  1.5rem;
+}
+
+.input-field .underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background-color:#fff;
+}
+
+.input-field .underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg , rgb(234, 57, 57), rgb(121, 242, 244));
+    transform: scale(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+
 
