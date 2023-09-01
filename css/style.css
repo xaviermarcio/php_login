@@ -17,9 +17,9 @@ body{
 }
 
 main.container{
-    background: rgb(60, 38, 188);
+    background: rgb(107, 89, 209);
     min-width: 320px;
-    min-height: 40vh;
+    min-height: 35vh;
     padding: 2rem;
     box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.5);
     border-radius: 25px 8px 25px 8px;
@@ -39,7 +39,7 @@ main h2::before{
     width: 30px;
     bottom: 1px;
     border-radius: 10px;
-    background: linear-gradient(45deg , rgb(234, 57, 57), rgb(121, 242, 244));
+    background: linear-gradient(45deg , rgb(239, 127, 211), rgb(243, 6, 6));
 }    
 
 form{
@@ -58,8 +58,9 @@ form .input-field:first-child{
 .input-field .underline::before{
     content: '';
     position: absolute;
-    height: 2px;
+    height: 3px;
     width: 100%;
+    border-radius: 5px;
     bottom: -5px;
     left: 0;
     background-color:#fff;
@@ -68,11 +69,12 @@ form .input-field:first-child{
 .input-field .underline::after{
     content: '';
     position: absolute;
-    height: 2px;
+    height: 3px;
     width: 100%;
     bottom: -5px;
+    border-radius: 5px;
     left: 0;
-    background: linear-gradient(45deg , rgb(234, 57, 57), rgb(121, 242, 244));
+    background: linear-gradient(45deg , rgb(239, 127, 211), rgb(243, 6, 6));
     transform: scale(0);
     transition: all .3s ease-in-out;
     transform-origin: left;
@@ -82,5 +84,35 @@ form .input-field:first-child{
     transform: scaleX(1);
 }
 
+.input-field input{
+    outline: none;
+    font-size: 0.9rem;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.input-field input::placeholder{
+    color: #fff;
+}
+
+form input[type="submit"]{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition:  all 0.3s ease;
+}
+
+form input[type="submit"]:hover{
+    letter-spacing: 1.5px;
+    color: #fff;
+    background: linear-gradient(45deg , rgb(239, 127, 211), rgb(243, 6, 6));
+}
 
 
