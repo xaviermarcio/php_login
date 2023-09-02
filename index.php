@@ -13,11 +13,11 @@
     <h2>LOGIN</h2>
         <form action="login.php" method="post">
             <div class="input-field">
-                <input type="email" name="email" id="email" placeholder="Digite seu email..." required>
+                <input type="email" name="email" id="email" placeholder="Digite o seu email..." required>
                 <div class="underline"></div>
             </div>
             <div class="input-field">
-                <input type="password" name="senha" id="senha" placeholder="Digite sua senha..." required>
+                <input type="password" name="senha" id="senha" placeholder="Digite asua senha..." required>
                 <div class="underline"></div>
             </div>
             <input type="submit" value="Entrar">

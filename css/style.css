@@ -28,6 +28,7 @@ main.container{
 
 main h2{
     font-weight: 600;
+    font-size: 30px;
     margin-bottom: 2rem;
     position: relative;
     color: #fff;
@@ -91,10 +92,12 @@ form .input-field:first-child{
     background-color: transparent;
     color:#fff;
     width: 100%;
+    text-indent: 12px;
 }
 
 .input-field input::placeholder{
     color: #fff;
+    text-indent: 12px;
 }
 
 form input[type="submit"]{
@@ -112,6 +115,9 @@ form input[type="submit"]{
     transition:  all 0.3s ease;
 }
 
+form input::placeholder{
+    letter-spacing: 5px;
+}
 form input[type="submit"]:hover{
     letter-spacing: 1.5px;
     color: #fff;
